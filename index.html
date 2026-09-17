@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Shreya ❤️</title>
+<meta name="theme-color" content="#12070d">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=Parisienne&display=swap');
+
+:root{
+  --rose:#ff4f78;
+  --rose2:#ff8fab;
+  --cream:#fff7f4;
+  --dark:#12070d;
+  --glass:rgba(255,255,255,.10);
+  --line:rgba(255,255,255,.18);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  min-height:100vh;
+  color:var(--cream);
+  background:
+    radial-gradient(circle at 15% 10%, rgba(255,79,120,.20), transparent 30%),
+    radial-gradient(circle at 85% 25%, rgba(255,143,171,.13), transparent 28%),
+    linear-gradient(145deg,#10050b,#210912 48%,#0b0408);
+  font-family:Inter,system-ui,sans-serif;
+  overflow-x:hidden;
+}
+body:before{
+  content:"";
+  position:fixed; inset:0; pointer-events:none; z-index:0;
+  background:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+             linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+  background-size:38px 38px;
+  mask-image:linear-gradient(to bottom,black,transparent 80%);
+}
+#fx{position:fixed;inset:0;pointer-events:none;z-index:20;overflow:hidden}
+.hero{
+  position:relative; z-index:2; min-height:100vh;
+  display:flex; align-items:center; justify-content:center;
+  padding:50px 18px 70px;
+}
+.card{
+  width:min(980px,100%);
+  border:1px solid var(--line);
+  background:rgba(20,7,13,.62);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+  border-radius:34px;
+  box-shadow:0 30px 100px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.08);
+  padding:clamp(28px,6vw,68px);
+  text-align:center;
+}
+.kicker{
+  letter-spacing:.24em;text-transform:uppercase;font-size:11px;
+  color:#ffc0cf;font-weight:700;margin-bottom:16px;
+}
+h1{
+  font-family:"DM Serif Display",serif;
+  font-size:clamp(58px,12vw,120px);
+  line-height:.85;margin:0;color:#fff;
+  text-shadow:0 10px 40px rgba(255,79,120,.25);
+}
+.script{
+  font-family:Parisienne,cursive;
+  color:#ff9eb6;font-size:clamp(34px,7vw,62px);
+  margin:10px 0 12px;
+}
+.sub{
+  max-width:620px;margin:0 auto;color:#eadde1;
+  font-size:clamp(14px,2.2vw,18px);line-height:1.7;
+}
+.countdown{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:12px;max-width:700px;margin:34px auto 26px;
+}
+.time{
+  padding:20px 8px;border-radius:20px;
+  background:linear-gradient(180deg,rgba(255,255,255,.12),rgba(255,255,255,.05));
+  border:1px solid rgba(255,255,255,.12);
+}
+.num{
+  font-size:clamp(30px,6vw,54px);font-weight:700;line-height:1;
+  font-variant-numeric:tabular-nums;
+}
+.label{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#cbbbc0;margin-top:8px}
+.bday{
+  display:none;font-family:"DM Serif Display",serif;
+  font-size:clamp(38px,8vw,76px);color:#fff;
+  animation:pulse 1.8s ease-in-out infinite;
+}
+@keyframes pulse{50%{transform:scale(1.035);text-shadow:0 0 45px rgba(255,79,120,.65)}}
+.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:22px}
+.btn{
+  border:0;border-radius:999px;padding:13px 21px;cursor:pointer;
+  color:#fff;background:linear-gradient(135deg,#ff4f78,#d92e58);
+  font-weight:700;box-shadow:0 10px 30px rgba(255,79,120,.22);
+  transition:.2s transform,.2s box-shadow;
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 35px rgba(255,79,120,.32)}
+.btn.alt{background:rgba(255,255,255,.08);border:1px solid var(--line)}
+.scroll{
+  position:absolute;bottom:18px;left:50%;transform:translateX(-50%);
+  color:#bdaeb3;font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+}
+section{position:relative;z-index:2;padding:70px 18px}
+.wrap{width:min(1080px,100%);margin:auto}
+.section-title{text-align:center;margin-bottom:30px}
+.section-title h2{font-family:"DM Serif Display",serif;font-size:clamp(38px,6vw,58px);margin:0 0 8px}
+.section-title p{color:#cdbfc4;margin:0}
+.gallery{
+  display:grid;grid-template-columns:repeat(12,1fr);gap:14px;
+}
+.photo{
+  overflow:hidden;border-radius:24px;border:1px solid rgba(255,255,255,.12);
+  background:#1b0a10;box-shadow:0 18px 50px rgba(0,0,0,.25);
+}
+.photo img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .7s ease}
+.photo:hover img{transform:scale(1.035)}
+.p1{grid-column:span 5;aspect-ratio:864/1536}
+.p2{grid-column:span 7;aspect-ratio:864/1536}
+.p3{grid-column:span 7;aspect-ratio:864/1536}
+.p4{grid-column:span 5;aspect-ratio:1024/1536}
+.note{
+  margin:34px auto 0;max-width:760px;text-align:center;
+  padding:30px;border-radius:28px;background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.11);
+}
+.note .heart{font-size:28px}
+.note p{font-family:"DM Serif Display",serif;font-size:25px;line-height:1.45;margin:12px 0 0}
+footer{text-align:center;padding:45px 18px 70px;color:#9f8d94;font-size:12px;position:relative;z-index:2}
+.float-heart{
+  position:absolute;font-size:20px;opacity:0;
+  animation:floatUp linear forwards;
+  filter:drop-shadow(0 5px 15px rgba(255,79,120,.45));
+}
+@keyframes floatUp{
+  0%{transform:translateY(20vh) scale(.5) rotate(0);opacity:0}
+  10%{opacity:.9}
+  100%{transform:translateY(-110vh) scale(1.25) rotate(25deg);opacity:0}
+}
+.balloon{
+  position:absolute;width:54px;height:68px;border-radius:50% 50% 46% 46%;
+  opacity:.9;filter:drop-shadow(0 10px 18px rgba(0,0,0,.22));
+  animation:sway 4s ease-in-out infinite;
+}
+.balloon:after{
+  content:"";position:absolute;width:1px;height:100px;background:rgba(255,255,255,.3);
+  top:64px;left:50%;
+}
+.balloon b{
+  position:absolute;bottom:-5px;left:50%;transform:translateX(-50%);
+  width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;
+  border-top:9px solid currentColor;
+}
+@keyframes sway{50%{transform:translateX(12px) rotate(3deg)}}
+.b1{left:3%;top:14%;background:#ff4f78;color:#ff4f78}
+.b2{right:4%;top:20%;background:#ff9eb6;color:#ff9eb6;animation-delay:-1.2s}
+.b3{left:8%;bottom:13%;background:#e53d68;color:#e53d68;animation-delay:-2s}
+.b4{right:9%;bottom:12%;background:#ffd1dc;color:#ffd1dc;animation-delay:-.6s}
+@media(max-width:700px){
+  .card{border-radius:26px}
+  .countdown{gap:7px}
+  .time{padding:16px 4px;border-radius:16px}
+  .gallery{display:block}
+  .photo{margin-bottom:14px}
+  .p1,.p2,.p3,.p4{aspect-ratio:auto}
+  .photo img{height:auto}
+  .balloon{transform:scale(.72)}
+}
+</style>
+</head>
+<body>
+<div id="fx"></div>
+
+<div class="hero">
+  <div class="balloon b1"><b></b></div>
+  <div class="balloon b2"><b></b></div>
+  <div class="balloon b3"><b></b></div>
+  <div class="balloon b4"><b></b></div>
+
+  <main class="card">
+    <div class="kicker">A little surprise for</div>
+    <h1>Shreya</h1>
+    <div class="script">your special day is coming ❤️</div>
+    <p class="sub">
+      Counting every second until <strong>24 September 2026</strong> —
+      because someone very special deserves a whole countdown of her own.
+    </p>
+
+    <div class="countdown" id="countdown">
+      <div class="time"><div class="num" id="days">00</div><div class="label">Days</div></div>
+      <div class="time"><div class="num" id="hours">00</div><div class="label">Hours</div></div>
+      <div class="time"><div class="num" id="mins">00</div><div class="label">Minutes</div></div>
+      <div class="time"><div class="num" id="secs">00</div><div class="label">Seconds</div></div>
+    </div>
+
+    <div class="bday" id="birthday">HAPPY BIRTHDAY, SHREYA! ❤️</div>
+
+    <div class="actions">
+      <button class="btn" onclick="heartBurst()">Send some love 💗</button>
+      <button class="btn alt" onclick="document.getElementById('memories').scrollIntoView({behavior:'smooth'})">See the memories ✨</button>
+    </div>
+  </main>
+  <div class="scroll">scroll for her ♡</div>
+</div>
+
+<section id="memories">
+  <div class="wrap">
+    <div class="section-title">
+      <h2>Her little universe</h2>
+      <p>Some moments, some smiles, and a lot of love. ❤️</p>
+    </div>
+    <div class="gallery">
+      <div class="photo p1"><img src="assets/SPECIAL ONE.png" alt="Shreya"></div>
+      <div class="photo p2"><img src="assets/MIINE.png" alt="Shreya"></div>
+      <div class="photo p3"><img src="assets/LOVE.png" alt="Shreya"></div>
+      <div class="photo p4"><img src="assets/HER.png" alt="Shreya"></div>
+    </div>
+    <div class="note">
+      <div class="heart">♡</div>
+      <p>“Some people make ordinary days feel a little more beautiful.”</p>
+    </div>
+  </div>
+</section>
+
+<footer>Made with ❤️ for Shreya • 24.09.2026</footer>
+
+<script>
+const target = new Date("2026-09-24T00:00:00+05:30").getTime();
+
+function pad(n){ return String(n).padStart(2,"0"); }
+
+function updateCountdown(){
+  const now = Date.now();
+  let diff = target - now;
+
+  if(diff <= 0){
+    document.getElementById("countdown").style.display="none";
+    document.getElementById("birthday").style.display="block";
+    return;
+  }
+
+  const days = Math.floor(diff / 86400000); diff %= 86400000;
+  const hours = Math.floor(diff / 3600000); diff %= 3600000;
+  const mins = Math.floor(diff / 60000); diff %= 60000;
+  const secs = Math.floor(diff / 1000);
+
+  document.getElementById("days").textContent = pad(days);
+  document.getElementById("hours").textContent = pad(hours);
+  document.getElementById("mins").textContent = pad(mins);
+  document.getElementById("secs").textContent = pad(secs);
+}
+updateCountdown();
+setInterval(updateCountdown,1000);
+
+function makeHeart(x, y, size){
+  const h=document.createElement("div");
+  h.className="float-heart";
+  h.textContent=["♥","♡","💗","💕","❤️"][Math.floor(Math.random()*5)];
+  h.style.left=(x ?? Math.random()*100)+"vw";
+  h.style.bottom=(y ?? -5)+"vh";
+  h.style.fontSize=(size ?? (14+Math.random()*28))+"px";
+  h.style.animationDuration=(5+Math.random()*5)+"s";
+  document.getElementById("fx").appendChild(h);
+  setTimeout(()=>h.remove(),11000);
+}
+setInterval(()=>makeHeart(),650);
+
+function heartBurst(){
+  for(let i=0;i<28;i++){
+    setTimeout(()=>makeHeart(20+Math.random()*60,-2,16+Math.random()*34),i*45);
+  }
+}
+</script>
+</body>
+</html>
